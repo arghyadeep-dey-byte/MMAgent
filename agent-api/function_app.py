@@ -33,8 +33,8 @@ def agent(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse("API key not configured.", status_code=500)
     
     # Define the Azure OpenAI endpoint URL.
-    url = "https://openai-1703668.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-10-21"
-
+    #url = "https://open-ai-mmagent.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-10-21"
+    url = "https://open-ai-mmagent.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2025-01-01-preview"
     headers = {
         "Content-Type": "application/json",
         "api-key": api_key
